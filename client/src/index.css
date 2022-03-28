@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.client {
+  font-family: 'Urbanist', sans-serif;
+}
+.admin {
+  font-family: 'Source Sans Pro', sans-serif;
+}
