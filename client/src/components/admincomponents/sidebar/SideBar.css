@@ -32,6 +32,10 @@
     background-color: rgb(232, 233, 243);
     color: darkblue;
 }
+.active {
+    background-color: rgb(232, 233, 243);
+    color: darkblue;
+}
 .sideBarIcon {
     margin-right: 5px;
     font-size: 20px !important;

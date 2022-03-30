@@ -1,13 +1,22 @@
-import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid, Publish } from '@material-ui/icons'
-import { LadyStyle1 } from 'images'
-import './User.css'
+import { 
+    CalendarToday, 
+    LocationSearching, 
+    MailOutline, 
+    PermIdentity, 
+    PhoneAndroid, 
+    Publish } from '@material-ui/icons'
+import { LadyStyle1 } from 'images';
+import {Link} from 'react-router-dom';
+import './User.css';
 
 const User = () => {
   return (
     <div className='user'>
         <div className="userTitleContainer">
             <h1 className="userTitle">Edit User</h1>
-            <button className="createUser">Create User</button>
+            <Link to='/admin/newuser'>
+                <button className="createUser">Create User</button>
+            </Link>  
         </div>
         <div className="userContainer">
             <div className="userShow">
@@ -50,40 +59,35 @@ const User = () => {
                         <div className="userUpdateItem">
                             <label>Username</label>
                             <input type="text" placeholder='annabeck' className='userUpdateInput' />
-
                         </div>
                         <div className="userUpdateItem">
                             <label>Full Name</label>
                             <input type="text" placeholder='Anna Becker' className='userUpdateInput' />
-
                         </div>
                         <div className="userUpdateItem">
-                            <label>Date</label>
-                            <input type="date" placeholder='DOB' className='userUpdateInput' />
-                            
+                            <label>D.O.B</label>
+                            <input type="date" placeholder='DOB' className='userUpdateInput' />                           
                         </div>
                         <div className="userUpdateItem">
                             <label>Phone Number</label>
-                            <input type="number" placeholder='Phone Number' className='userUpdateInput' />
-                            
+                            <input type="number" placeholder='Phone Number' className='userUpdateInput' />                           
                         </div>
                         <div className="userUpdateItem">
                             <label>Email</label>
-                            <input type="email" placeholder='annabeck@gmail.com' className='userUpdateInput' />
-                            
+                            <input type="email" placeholder='annabeck@gmail.com' className='userUpdateInput' />                            
                         </div>
                         <div className="userUpdateItem">
                             <label>Address</label>
-                            <input type="text" placeholder='New York - USA' className='userUpdateInput' />
-                            
+                            <input type="text" placeholder='New York - USA' className='userUpdateInput' />                       
                         </div>
                     </div>
                     <div className="userUpdateRight">
                         <div className="userUpdateUpload">
                             <img src={LadyStyle1} alt="" className="userUpdateImg" />
-                            <label htmlFor="file"><Publish /></label>
-                            <input type="file" />
+                            <label htmlFor="file"><Publish className='userUpdateIcon' /></label>
+                            <input type="file" style={{display: 'none'}} />
                         </div>
+                        <button className='userUpdateButton' >Update</button>
                     </div>
                 </form>
             </div>

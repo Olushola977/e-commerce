@@ -2,7 +2,7 @@ import Chart from '../../../components/admincomponents/chart/Chart';
 import FeaturedInfo from '../../../components/admincomponents/featuredInfo/FeaturedInfo';
 import WidgetLg from '../../../components/admincomponents/widgets/widgetLg/WidgetLg';
 import WidgetSm from '../../../components/admincomponents/widgets/widgetSm/WidgetSm';
-import { data } from '../../../components/chartData';
+import { data } from '../../../chartData';
 import './Home.css';
 
 const Home = () => {

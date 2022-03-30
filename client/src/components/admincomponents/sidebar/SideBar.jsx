@@ -1,5 +1,6 @@
 import './SideBar.css';
-import { BarChart, ChatBubbleOutline, DynamicFeed, Home, LineStyle, MailOutline, PermIdentity, Report, Storefront, Timeline, TrendingUp, WorkOutline } from '@material-ui/icons';
+import { BarChart, ChatBubbleOutline, DynamicFeed, Home, MailOutline, PermIdentity, Report, Storefront, Timeline, TrendingUp, WorkOutline } from '@material-ui/icons';
+import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
   return (
@@ -8,10 +9,12 @@ const SideBar = () => {
             <div className="sideBarMenu">
                 <h3 className="sideBarTitle">Dashboard</h3>
                 <ul className="sideBarList">
-                    <li className="sideBarListItem">
-                        <Home className='sideBarIcon' />
-                        Home
-                    </li>
+                    <NavLink to='/admin/dashboard' className={({ isActive }) => (isActive ? "active" : " ")}>
+                        <li className="sideBarListItem">
+                            <Home className='sideBarIcon' />
+                            Home
+                        </li>
+                    </NavLink>
                     <li className="sideBarListItem">
                         <Timeline className='sideBarIcon' />
                         Analytics
@@ -25,14 +28,18 @@ const SideBar = () => {
             <div className="sideBarMenu">
                 <h3 className="sideBarTitle">Quick Menu</h3>
                 <ul className="sideBarList">
-                    <li className="sideBarListItem">
-                        <PermIdentity className='sideBarIcon' />
-                        Users
-                    </li>
-                    <li className="sideBarListItem">
-                        <Storefront className='sideBarIcon' />
-                        Store
-                    </li>
+                    <NavLink to='/admin/users' className={({ isActive }) => (isActive ? "active" : " ")}>
+                        <li className="sideBarListItem">
+                            <PermIdentity className='sideBarIcon' />
+                            Users
+                        </li>
+                    </NavLink>
+                    <NavLink to='/admin/products' className={({ isActive }) => (isActive ? "active" : " ")}>
+                        <li className="sideBarListItem">
+                            <Storefront className='sideBarIcon' />
+                            Products
+                        </li>
+                    </NavLink>
                     <li className="sideBarListItem">
                         <BarChart className='sideBarIcon' />
                         Reports

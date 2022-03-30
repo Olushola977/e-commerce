@@ -88,3 +88,15 @@ export const rows = [
     { id: 8, userName: 'Frances Rossini', avatar: `${ LadyStyle1 }`, email: 'bigbang@gmail.com', status: 'active', transaction: '$1200' },
     { id: 9, userName: 'Roxie Harvey', avatar: `${ LadyStyle1 }`, email: 'bigbang@gmail.com', status: 'active', transaction: '$1200' },
   ];
+
+  export const productRows = [
+    { id: 1, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 2, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 3, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 4, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 5, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 6, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 7, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 8, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+    { id: 9, name: 'Apple Airpod', img: `${ LadyStyle1 }`, stock: 123, status: 'active', price: '$1200' },
+  ];
